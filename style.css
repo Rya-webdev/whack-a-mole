@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: wheat;
+  font-family: monospace;
+  font-size: 20px;
+  cursor: default;
+}
+
+.head {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  width: 606px;
+  height: 606px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: crosshair;
+  border: 20px solid #fff;
+  border-radius: 20px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border: 1px solid black;
+}
+
+.mole {
+  background-image: url(./mole.jpg);
+  background-size: cover;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#start {
+  border: none;
+  padding: 20px;
+  font-family: "ink free";
+  font-weight: 800;
+  font-size: 24px;
+  border-radius: 45px;
+  background-color: rgba(250, 128, 114, 0.6);
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#start:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.footer {
+  font-size: 16px;
+  text-align: end;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 699px) {
+  body {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .head {
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .grid {
+    width: 306px;
+    height: 306px;
+  }
+
+  .time-keeper {
+    display: flex;
+    font-size: 15px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .instructions {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .footer {
+    font-size: 14px;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .instructions {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
