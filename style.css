@@ -121,6 +121,7 @@ p {
 
   .time-keeper {
     display: flex;
+    flex-direction: column;
     font-size: 15px;
   }
 
@@ -142,6 +143,39 @@ p {
   .footer {
     font-size: 14px;
     text-align: end;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .grid {
+    width: 246px;
+    height: 246px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .grid {
+    width: 186px;
+    height: 186px;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+  }
+
+  .head {
+    flex-direction: column;
+  }
+
+  .time-keeper {
+    display: flex;
+    flex-direction: column;
   }
 }
 
