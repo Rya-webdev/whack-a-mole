@@ -13,7 +13,7 @@ startBtn.addEventListener("click", startGame);
 
 function startGame() {
   
-  startBtn.classList.add("playing")
+  startBtn.classList.add("playing");
   
   function randomSquare() {
     squares.forEach((square) => {
