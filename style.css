@@ -76,6 +76,12 @@ h3 {
   color: #fff;
 }
 
+
+.playing{
+ background-color:white;
+ 
+}
+
 .instructions {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,7 @@ p {
     text-align: end;
   }
 }
+
 
 @media screen and (max-width: 405px) {
   .grid {
