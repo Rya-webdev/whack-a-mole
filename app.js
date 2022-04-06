@@ -12,6 +12,9 @@ let currentTime = 59;
 startBtn.addEventListener("click", startGame);
 
 function startGame() {
+  
+  startBtn.classList.add("playing")
+  
   function randomSquare() {
     squares.forEach((square) => {
       square.classList.remove("mole");
